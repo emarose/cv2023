@@ -10,10 +10,11 @@
   <title>Emanuel Amerio C.V.</title>
 </head>
 
-<body id="body">
+<body id="body" class="roboto">
+
   <header>
     <div class="image">
-      <img src="/doc/assets/foto.jpg" alt="foto" />
+      <img src="./doc/assets/foto.jpg" alt="foto" />
     </div>
     <div class="title">
       <h2>emanuel amerio</h2>
@@ -23,6 +24,10 @@
   </header>
   <main>
     <div class="col1 w-25">
+      <button class="btnCambiarFuente" type="button" onclick="changeFont()"><span class="material-icons">
+        text_rotation_none
+        </span>
+      </button>
       <h5 class="subtitle">sobre mi</h5>
       <input class="input" id="toggle" type="checkbox">
 
@@ -176,19 +181,17 @@
   </main>
   <footer>
     <div class="social">
-      <a href="mailto:emanuelamerio.rose@gmail.com">
-        <i class="material-icons">mail</i> emanuelamerio.rose@gmail.com
-      </a>
+
+       <a href="mailto:emanuelamerio.rose@gmail.com">
+         <i class="material-icons">mail</i> emanuelamerio.rose@gmail.com
+       </a>
       <a href="https://wa.me/542235679484"> <i class="material-icons">phone</i> +54 2235679484</a>
       <a target="_blank" href="http://github.com/emarose/">
         <img src="./iconmonstr-github-1.svg" alt="github"> Github
       </a>
       </span>
     </div>
-    <button class="btnCambiarFuente" type="button" onclick="changeFont()"><span class="material-icons">
-      text_rotation_none
-      </span>
-    </button>
+   
   </footer>
 </body>
 <script src="./main.js"></script>

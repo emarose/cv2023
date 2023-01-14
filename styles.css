@@ -215,16 +215,29 @@ input:checked + .label .slider:before {
 }
 .btnCambiarFuente {
   display: flex;
-
+  outline: 1px solid;
   align-items: center;
   border: none;
   justify-content: center;
 
-  padding: 0.5em 4em;
+  padding: 0;
   align-self: end;
   background-color: white;
 }
-
+.btnCambiarFuente:hover {
+  cursor: pointer;
+}
+.social a {
+  display: flex;
+  align-items: center;
+  gap: 0 0.8em;
+}
+.roboto {
+  font-family: "Roboto Mono", monospace;
+}
+.opensans {
+  font-family: "Open Sans", sans;
+}
 @keyframes opacity {
   0% {
     opacity: 0%;

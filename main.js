@@ -19,9 +19,13 @@ const mostrar = () => {
 check.addEventListener("click", mostrar);
 
 function changeFont() {
-  if (body.style.fontFamily === "Open Sans") {
-    body.style.fontFamily = "Roboto Mono";
-  } else {
+  if (body.classList.contains("roboto")) {
     body.style.fontFamily = "Open Sans";
+    body.classList.remove("roboto");
+    body.classList.add("opensans");
+  } else {
+    body.style.fontFamily = "Roboto Mono";
+    body.classList.remove("opensans");
+    body.classList.add("roboto");
   }
 }
